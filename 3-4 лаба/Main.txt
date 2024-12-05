@@ -1,0 +1,27 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Vehicle car = new Vehicle("Машина", "Синий", 72, "Присутствует", "Ferrari", 810000, "Иван", 1100, "Оптимальное давление в шинах", "Торможение двигателем");
+        String vehicleType = car.getType();
+        String vehicleColor = car.getColor();
+        int vehicleSpeed = car.getSpeed();
+        String vehicleEngineAvailability = car.getEngineAvailability();
+        String vehicleEngine = car.getEngine();
+        int vehiclePrice = car.getPrice();
+        String vehicleOwner = car.getOwner();
+        int vehicleTime = car.getTime();
+        String vehicleBoost = car.getBoost();
+        String vehicleSlowing = car.getSlowing();
+
+        System.out.println("Тип транспортного средства - " + vehicleType);
+        System.out.println("Цвет - " + vehicleColor);
+        System.out.println("Скорость - " + vehicleSpeed + " км/ч");
+        System.out.println("Наличие двигателя - " + vehicleEngineAvailability);
+        System.out.println("Тип двигателя - " + vehicleEngine);
+        System.out.println("Цена - " + vehiclePrice + " рублей");
+        System.out.println("Владелец - " + vehicleOwner);
+        System.out.println("Время - " + vehicleTime + " часов");
+        System.out.println("Метод ускорения - " + vehicleBoost);
+        System.out.println("Метод замедления - " + vehicleSlowing);
+    }
+}
